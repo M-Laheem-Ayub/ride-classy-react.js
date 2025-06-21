@@ -1,11 +1,11 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { offerData } from "../../data/offerData"; // Import the data
+import { offerData } from "../../../data/offerData"; // Import the data
 
 const WhatWeOffer = () => {
   return (
     <div>
-      <div className="max-w-screen-xl mx-auto md:h-[88vh]">
+      <div className="text-center max-w-screen-xl mx-auto md:h-[88vh]">
         <div className="flex flex-col md:flex-row md:h-[88vh]">
           <div
             className="w-full md:w-1/2 h-[44vh] md:h-[88vh]"
