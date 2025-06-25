@@ -17,7 +17,7 @@ const CorporateHire = () => {
   }, []);
 
   return (
-    <div className="flex flex-col justify-center items-center  md:text-base text-[14.6px]">
+    <div className="flex flex-col md:text-base text-[14.6px]">
       <Header />
       <main className="max-w-screen-xl md:text-base text-[14.6px]">
         <PageTitle pageTitle={"Professional Corporate Transportation Services"} />
