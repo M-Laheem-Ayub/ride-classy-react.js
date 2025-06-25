@@ -7,7 +7,7 @@ const Header = () => {
 
   return (
     <div>
-      <nav className="bg-white shadow-md w-screen">
+      <nav className="bg-white shadow-md w-full">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2 md:p-4">
           <NavLink to="/" className="focus:outline-none flex  items-center space-x-3 rtl:space-x-reverse ps-0 md:ps-4">
             <img src="assets/images/fg-images/logo.png" className="h-8 md:h-9" alt="Logo" />

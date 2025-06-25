@@ -1,14 +1,14 @@
 import React from "react";
 import { useEffect } from "react";
-import Header from "../../components/header/Header";
-import Footer from "../../components/footer/Footer";
-import PageTitle from "../../components/page-title/PageTitle";
-import HeadingWithParagraph from "../../components/heading-with-paragraph/HeadingWithParagraph";
-import { airportTransferData } from "../../data/airportTransferData";
-import ListWithBullets from "../../components/list-with-bullets/ListWithBullets";
+import Header from "../../../components/header/Header";
+import Footer from "../../../components/footer/Footer";
+import PageTitle from "../../../components/page-title/PageTitle";
+import HeadingWithParagraph from "../../../components/heading-with-paragraph/HeadingWithParagraph";
+import { airportTransferData } from "../../../data/airportTransferData";
+import ListWithBullets from "../../../components/list-with-bullets/ListWithBullets";
 import { NavLink } from "react-router-dom";
-import { whyChooseIntercityRide } from "../../data/whyChooseIntercityRide";
-import { whyChooseAirportTransfer } from "../../data/whyChooseAirportTransfer";
+import { whyChooseIntercityRide } from "../../../data/whyChooseIntercityRide";
+import { whyChooseAirportTransfer } from "../../../data/whyChooseAirportTransfer";
 
 const AirportTransfer = () => {
 
@@ -17,8 +17,9 @@ const AirportTransfer = () => {
   }, []);
 
   return (
-    <div className="md:text-base text-[14.6px]">
+    <div  className="flex flex-col justify-center items-center  md:text-base text-[14.6px]">
       <Header />
+      <main className="max-w-screen-xl md:text-base text-[14.6px]">
       <PageTitle pageTitle={"Barcelona Airport Transfers"} />
       <img
         className=" px-2 md:px-9 "
@@ -40,6 +41,7 @@ const AirportTransfer = () => {
           Click here to book online.
         </NavLink>
       </p>
+      </main>
       <Footer />
     </div>
   );

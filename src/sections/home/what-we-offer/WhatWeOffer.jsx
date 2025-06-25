@@ -19,7 +19,7 @@ const WhatWeOffer = () => {
           />
 
           <div className="py-12 w-full md:w-1/2 flex flex-col bg-[#1a2025] md:h-[88vh]">
-            <h2 className="pb-10 font-playfair text-[1.6rem] md:text-[2.4rem] text-[#EFA765] font-bold px-16  md:px-12">
+            <h2 className="pb-10 font-playfair text-[1.6rem] md:text-[2.4rem] text-[#EFA765] font-bold px-6 md:px-12">
               We make sure that your every ride is comfortable
             </h2>
             <div className="w-4/5 flex flex-wrap items-baseline justify-center mx-auto">

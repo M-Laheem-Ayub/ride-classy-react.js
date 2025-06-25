@@ -7,6 +7,7 @@ export default {
         playfair: ['"Playfair Display"', 'serif'],
         alegreya: ['Alegreya Sans', 'sans-serif'],
         roboto: ['Roboto', 'sans-serif'],
+         robotoSlab: ['"Roboto Slab"', "serif"],
         sans: ['"Open Sans"', 'sans-serif'],
       },
     },

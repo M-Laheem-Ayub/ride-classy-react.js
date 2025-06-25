@@ -15,10 +15,17 @@ const Footer = () => {
                   alt="Logo"
                 />
               </a>
-              <a className="mt-2 text-base text-[#EFA765] block">
+              {/* Make email and phone clickable */}
+              <a
+                href="mailto:contact@rideclassy.com"
+                className="mt-2 text-base text-[#EFA765] block hover:underline"
+              >
                 contact@rideclassy.com
               </a>
-              <a className="mt-2 text-base text-[#EFA765] block">
+              <a
+                href="tel:+34933939367"
+                className="mt-2 text-base text-[#EFA765] block hover:underline"
+              >
                 +34 933 93 93 67
               </a>
             </div>
@@ -59,21 +66,9 @@ const Footer = () => {
             </div>
 
             <div>
-              <img src="assets/images/fg-images/payment-gateway.png" alt="" />
-            </div>
-          </div>
-
-          <div className="flex flex-col md:flex-row justify-between items-center mt-6">
-            <div className="flex space-x-2">
               <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-v52tLnvL3FEjfxjPvZWbvUMYvVUtAm9R6A&s"
-                alt="Google Play"
-                className="h-10"
-              />
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJgk5tpxJC_1CAnsXwo2VvBGyQGI-o5c1PJw&s"
-                alt="App Store"
-                className="h-10"
+                src="assets/images/fg-images/payment-gateway.png"
+                alt="Payment options"
               />
             </div>
           </div>

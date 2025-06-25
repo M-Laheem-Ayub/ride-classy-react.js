@@ -1,14 +1,14 @@
 import React from "react";
 import { useEffect } from "react";
-import PageTitle from "../../components/page-title/PageTitle";
-import Header from "../../components/header/Header";
-import Footer from "../../components/footer/Footer";
-import HeadingWithParagraph from "../../components/heading-with-paragraph/HeadingWithParagraph";
-import { IntercityRidesData } from "../../data/IntercityRidesData";
-import ListWithTitle from "../../components/list-with-title/ListWithTitle";
-import { whyChooseIntercityRide } from "../../data/whyChooseIntercityRide";
-import ListWithBullets from "../../components/list-with-bullets/ListWithBullets";
-import { perfectServices } from "../../data/perfectServices";
+import PageTitle from "../../../components/page-title/PageTitle";
+import Header from "../../../components/header/Header";
+import Footer from "../../../components/footer/Footer";
+import HeadingWithParagraph from "../../../components/heading-with-paragraph/HeadingWithParagraph";
+import { IntercityRidesData } from "../../../data/IntercityRidesData";
+import ListWithTitle from "../../../components/list-with-title/ListWithTitle";
+import { whyChooseIntercityRide } from "../../../data/whyChooseIntercityRide";
+import ListWithBullets from "../../../components/list-with-bullets/ListWithBullets";
+import { perfectServices } from "../../../data/perfectServices";
 import { NavLink } from "react-router-dom";
 
 const IntercityRides = () => {

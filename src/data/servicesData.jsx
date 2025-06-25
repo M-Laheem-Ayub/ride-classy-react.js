@@ -10,7 +10,7 @@ export const servicesData = [
     title: "Intercity Rides",
     description: "Comfortable long route trips with our premium vehicles.",
     image: "assets/images/fg-images/service2.jpg",
-    path: "intercity-rides",
+    path: "/intercity-rides",
   },
   {
     title: "Events",
@@ -22,6 +22,6 @@ export const servicesData = [
     title: "Corporate Hire",
     description: "Totally personalized & reliable service for companies.",
     image: "assets/images/fg-images/service4.jpg",
-    path: "/services/corporate-hire",
+    path: "/corporate-hire",
   },
 ];
