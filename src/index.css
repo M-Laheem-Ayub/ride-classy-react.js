@@ -10,3 +10,7 @@
 body{
   background-color: #1a2025;
 }
+::selection {
+  background-color: #EFA765; /* Tailwind blue-500 */
+  color: black;
+}

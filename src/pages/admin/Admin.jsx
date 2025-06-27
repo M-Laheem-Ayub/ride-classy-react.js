@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import AdminHeader from "../../components/admin-header/AdminHeader";
 import Sidebar from "../../components/sidebar/Sidebar";
@@ -8,6 +8,9 @@ import RideStyles from "./RideStyles";
 import Vehicles from "./Vehicles";
 
 const Admin = () => {
+   useEffect(() => {
+    document.title = "Admin Panel - RideClassy";
+  }, []);
   const [sidebarOpen, setSidebarOpen] = useState(window.innerWidth >= 1024); // Desktop par open by default
 
   return (
