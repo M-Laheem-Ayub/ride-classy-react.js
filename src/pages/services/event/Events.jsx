@@ -1,7 +1,5 @@
 import React from "react";
 import { useEffect } from "react";
-import Header from "../../../components/header/Header";
-import Footer from "../../../components/footer/Footer";
 import PageTitle from "../../../components/page-title/PageTitle";
 import HeadingWithParagraph from "../../../components/heading-with-paragraph/HeadingWithParagraph";
 import ListWithBullets from "../../../components/list-with-bullets/ListWithBullets";
@@ -16,7 +14,6 @@ const Events = () => {
 
   return (
     <div className="flex flex-col md:text-base text-[14.6px] bg-white">
-      <Header />
       <main className="max-w-screen-xl md:text-base text-[14.6px]">
         <PageTitle pageTitle={"Premier Event Transportation Services"} />
         <HeadingWithParagraph contentData={eventsData} />
@@ -45,7 +42,6 @@ const Events = () => {
           </NavLink>
         </p>
       </main>
-      <Footer />
     </div>
   );
 };

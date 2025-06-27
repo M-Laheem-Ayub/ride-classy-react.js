@@ -1,6 +1,4 @@
 import React, { useEffect } from "react";
-import Header from "../../components/header/Header";
-import Footer from "../../components/footer/Footer";
 import ContactUs from "../../sections/contact/contact-us/ContactUs";
 import PageTitle from "../../components/page-title/PageTitle";
 
@@ -10,7 +8,6 @@ const Contact = () => {
   }, []);
   return (
     <div className="bg-[#1a2025] md:text-base text-[14.6px]">
-      <Header />
       <main className="">
         <div className=" text-[#161B1F] ">
           <PageTitle pageTitle={"Contact"} />
@@ -40,7 +37,6 @@ const Contact = () => {
 
         <ContactUs />
       </main>
-      <Footer />
     </div>
   );
 };

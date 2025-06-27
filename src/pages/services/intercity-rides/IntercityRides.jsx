@@ -1,8 +1,6 @@
 import React from "react";
 import { useEffect } from "react";
 import PageTitle from "../../../components/page-title/PageTitle";
-import Header from "../../../components/header/Header";
-import Footer from "../../../components/footer/Footer";
 import HeadingWithParagraph from "../../../components/heading-with-paragraph/HeadingWithParagraph";
 import { IntercityRidesData } from "../../../data/IntercityRidesData";
 import ListWithTitle from "../../../components/list-with-title/ListWithTitle";
@@ -18,7 +16,6 @@ const IntercityRides = () => {
   }, []);
   return (
     <div className="flex flex-col md:text-base text-[14.6px] bg-white">
-      <Header />
       <main className="max-w-screen-xl">
         <PageTitle
           pageTitle={
@@ -53,7 +50,6 @@ const IntercityRides = () => {
           your next intercity adventure and travel beyond the ordinary.
         </p>
       </main>
-      <Footer />
     </div>
   );
 };

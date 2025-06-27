@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="px-10 py-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="md:text-start">
-              <a href="#" className="md:block flex justify-center ">
+              <a href="/" className="md:block flex justify-center ">
                 <img
                   src="assets/images/fg-images/web-logo.png"
                   className="h-8"
@@ -44,7 +44,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <NavLink
-                    to="/privacy"
+                    to="/privacy-policy"
                     className={({ isActive }) =>
                       isActive ? "text-[#EFA765]" : "hover:text-[#EFA765]"
                     }

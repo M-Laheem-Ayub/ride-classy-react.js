@@ -1,13 +1,8 @@
 import React from "react";
 import { useEffect } from "react";
-import Header from "../../../components/header/Header";
-import Footer from "../../../components/footer/Footer";
 import PageTitle from "../../../components/page-title/PageTitle";
 import HeadingWithParagraph from "../../../components/heading-with-paragraph/HeadingWithParagraph";
 import ListWithBullets from "../../../components/list-with-bullets/ListWithBullets";
-import { NavLink } from "react-router-dom";
-import { eventsData } from "../../../data/eventsData";
-import { whyChooseEvents } from "../../../data/whyChooseEvents";
 import { CorporateHireData } from "../../../data/CorporateHireData";
 import { whyChooseCorporateHire } from "../../../data/whyChooseCorporateHire";
 
@@ -18,7 +13,6 @@ const CorporateHire = () => {
 
   return (
     <div className="flex flex-col md:text-base text-[14.6px] bg-white">
-      <Header />
       <main className="max-w-screen-xl md:text-base text-[14.6px]">
         <PageTitle pageTitle={"Professional Corporate Transportation Services"} />
 
@@ -31,7 +25,6 @@ const CorporateHire = () => {
         <ListWithBullets contentData={whyChooseCorporateHire} />
         <HeadingWithParagraph contentData={CorporateHireData} startIndex={3} />
       </main>
-      <Footer />
     </div>
   );
 };
