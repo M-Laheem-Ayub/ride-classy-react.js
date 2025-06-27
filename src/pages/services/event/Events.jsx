@@ -15,7 +15,7 @@ const Events = () => {
   }, []);
 
   return (
-    <div className="flex flex-col md:text-base text-[14.6px]">
+    <div className="flex flex-col md:text-base text-[14.6px] bg-white">
       <Header />
       <main className="max-w-screen-xl md:text-base text-[14.6px]">
         <PageTitle pageTitle={"Premier Event Transportation Services"} />

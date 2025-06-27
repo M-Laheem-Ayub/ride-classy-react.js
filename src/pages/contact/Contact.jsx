@@ -19,7 +19,7 @@ const Contact = () => {
           <div className="relative  flex items-center mx-auto h-[40vh] sm:h-[52vh] md:h-[70vh] lg:h-[88vh]">
             {/* Background image */}
             <div
-              className="absolute inset-0 bg-cover bg-bottom bg-no-repeat xl:bg-fixed"
+              className="absolute inset-0 bg-cover bg-bottom bg-no-repeat lg:bg-fixed"
               style={{
                 backgroundImage: "url('/assets/images/bg-images/contact.jpeg')",
               }}

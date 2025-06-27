@@ -43,7 +43,7 @@ const Header = () => {
                   to="/"
                   className={({ isActive }) =>
                     `block py-2 px-3 rounded  ${
-                      isActive ? "text-black font-bold" : "text-gray-500 hover:text-black"
+                      isActive ? "text-black font-semibold" : "text-gray-500 hover:text-black"
                     }`
                   }
                 >
@@ -55,7 +55,7 @@ const Header = () => {
                   to="/contact"
                   className={({ isActive }) =>
                     `block py-2 px-3 rounded  ${
-                      isActive ? "text-black font-bold" : "text-gray-500 hover:text-black"
+                      isActive ? "text-black font-semibold" : "text-gray-500 hover:text-black"
                     }`
                   }
                 >
@@ -67,7 +67,7 @@ const Header = () => {
                   to="/book"
                   className={({ isActive }) =>
                     `block py-2 px-3 rounded  ${
-                      isActive ? "text-black font-bold" : "text-gray-500 hover:text-black"
+                      isActive ? "text-black font-semibold" : "text-gray-500 hover:text-black"
                     }`
                   }
                 >

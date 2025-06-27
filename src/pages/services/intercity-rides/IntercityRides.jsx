@@ -17,7 +17,7 @@ const IntercityRides = () => {
       "Intercity Rides with RideClassy: Experience Seamless Travel Between Cities - RideClassy";
   }, []);
   return (
-    <div className="flex flex-col md:text-base text-[14.6px]">
+    <div className="flex flex-col md:text-base text-[14.6px] bg-white">
       <Header />
       <main className="max-w-screen-xl">
         <PageTitle

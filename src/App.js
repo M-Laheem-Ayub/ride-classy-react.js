@@ -7,6 +7,7 @@ import IntercityRides from "./pages/services/intercity-rides/IntercityRides";
 import Events from "./pages/services/event/Events";
 import CorporateHire from "./pages/services/corporate-hire/CorporateHire";
 import Contact from "./pages/contact/Contact";
+import BookOnline from "./pages/book-online/BookOnline";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/intercity-rides" element={<IntercityRides />} />
         <Route path="/events" element={<Events />} />
         <Route path="/corporate-hire" element={<CorporateHire />} />
+        <Route path="/book" element={<BookOnline />} />
       </Routes>
     </div>
   );

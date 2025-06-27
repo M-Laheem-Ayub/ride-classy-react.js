@@ -7,3 +7,6 @@
       @apply py-1.5 px-3 text-center bg-blue-700 rounded-md text-white;
   } */
 }
+body{
+  background-color: #1a2025;
+}

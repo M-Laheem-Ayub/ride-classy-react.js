@@ -4,8 +4,8 @@ import { fleetData } from "../../../data/fleetData"; // Import your data
 const OurFleet = () => {
   return (
     <div>
-      <section>
-        <div className="relative text-center items-center w-full px-5 mb-16 py-12 mx-auto md:px-12 max-w-7xl">
+      <section className="bg-white ">
+        <div className="relative text-center items-center w-full px-5 pb-16 py-12 mx-auto md:px-12 max-w-7xl">
           <div>
             <h2 className="text-[#161B1F] text-3xl sm:text-4xl Lg:text-5xl pb-4 font-extrabold font-playfair">Our Fleet</h2>
             <h5 className="text-[#838383] text-base pb-4 font-playfair font-semibold tracking-wider">
