@@ -7,10 +7,13 @@
       @apply py-1.5 px-3 text-center bg-blue-700 rounded-md text-white;
   } */
 }
-body{
+
+body {
   background-color: #1a2025;
 }
+
 ::selection {
-  background-color: #EFA765; /* Tailwind blue-500 */
+  background-color: #EFA765;
+  /* Tailwind blue-500 */
   color: black;
 }

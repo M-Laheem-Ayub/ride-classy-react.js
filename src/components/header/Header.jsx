@@ -52,13 +52,12 @@ const Header = () => {
 
           {/* Menu */}
           <div
-            className={`${
-              menuOpen ? "block" : "hidden"
+            className={`overflow-hidden transition-all duration-400 ease-in-out ${
+              menuOpen ? "max-h-96" : "max-h-0 md:max-h-20"
             } w-full md:block md:w-auto`}
             id="navbar-default"
           >
             <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white">
-              
               {/* Admin */}
               <li
                 className="flex items-center -ms-2 md:-ms-0 order-1 md:order-4"

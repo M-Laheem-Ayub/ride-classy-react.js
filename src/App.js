@@ -1,8 +1,7 @@
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
 import Home from "./pages/home/Home";
-import "./App.css";
 import AirportTransfer from "./pages/services/airport-transfer/AirportTransfer";
-import ScrollToTop from "./components/ScrollToTop";
 import IntercityRides from "./pages/services/intercity-rides/IntercityRides";
 import Events from "./pages/services/event/Events";
 import CorporateHire from "./pages/services/corporate-hire/CorporateHire";
@@ -10,6 +9,7 @@ import Contact from "./pages/contact/Contact";
 import BookOnline from "./pages/book-online/BookOnline";
 import Admin from "./pages/admin/Admin";
 import PrivacyPolicy from "./pages/privacy-policy/PrivacyPolicy";
+import PageWrapper from "./components/PageWrapper";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 
@@ -21,86 +21,98 @@ const MainLayout = ({ children }) => (
   </>
 );
 
-function App() {
-  return (
-    <Routes>
-      {/* Normal Routes */}
-      <Route
-        path="/"
-        element={
-          <MainLayout>
-            <Home />
-          </MainLayout>
-        }
-      />
-      <Route
-        path="/contact"
-        element={
-          <MainLayout>
-            <Contact />
-          </MainLayout>
-        }
-      />
-      <Route
-        path="/airport-transfers"
-        element={
-          <MainLayout>
-            <AirportTransfer />
-          </MainLayout>
-        }
-      />
-      <Route
-        path="/intercity-rides"
-        element={
-          <MainLayout>
-            <IntercityRides />
-          </MainLayout>
-        }
-      />
-      <Route
-        path="/events"
-        element={
-          <MainLayout>
-            <Events />
-          </MainLayout>
-        }
-      />
-      <Route
-        path="/corporate-hire"
-        element={
-          <MainLayout>
-            <CorporateHire />
-          </MainLayout>
-        }
-      />
-      <Route
-        path="/book-online"
-        element={
-          <MainLayout>
-            <BookOnline />
-          </MainLayout>
-        }
-      />
-      <Route
-        path="/privacy-policy"
-        element={
-          <MainLayout>
-            <PrivacyPolicy />
-          </MainLayout>
-        }
-      />
+function AnimatedRoutes() {
+  const location = useLocation();
 
-      {/* Admin Route - NO HEADER/FOOTER */}
-      <Route path="/admin/*" element={<Admin />} />
-    </Routes>
+  return (
+    <AnimatePresence mode="wait">
+      <Routes location={location} key={location.pathname}>
+        <Route
+          path="/"
+          element={
+            <MainLayout>
+              <PageWrapper>
+                <Home />
+              </PageWrapper>
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/contact"
+          element={
+            <MainLayout>
+              <PageWrapper>
+                <Contact />
+              </PageWrapper>
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/airport-transfers"
+          element={
+            <MainLayout>
+              <PageWrapper>
+                <AirportTransfer />
+              </PageWrapper>
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/intercity-rides"
+          element={
+            <MainLayout>
+              <PageWrapper>
+                <IntercityRides />
+              </PageWrapper>
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/events"
+          element={
+            <MainLayout>
+              <PageWrapper>
+                <Events />
+              </PageWrapper>
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/corporate-hire"
+          element={
+            <MainLayout>
+              <PageWrapper>
+                <CorporateHire />
+              </PageWrapper>
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/book-online"
+          element={
+            <MainLayout>
+              <PageWrapper>
+                <BookOnline />
+              </PageWrapper>
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/privacy-policy"
+          element={
+            <MainLayout>
+              <PageWrapper>
+                <PrivacyPolicy />
+              </PageWrapper>
+            </MainLayout>
+          }
+        />
+
+        {/* Admin route without header/footer */}
+        <Route path="/admin/*" element={<Admin />} />
+      </Routes>
+    </AnimatePresence>
   );
 }
 
-const Root = () => (
-  <BrowserRouter>
-    <ScrollToTop />
-    <App />
-  </BrowserRouter>
-);
-
-export default Root;
+export default AnimatedRoutes;
