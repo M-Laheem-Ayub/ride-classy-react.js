@@ -1,5 +1,6 @@
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation, BrowserRouter } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
+import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/home/Home";
 import AirportTransfer from "./pages/services/airport-transfer/AirportTransfer";
 import IntercityRides from "./pages/services/intercity-rides/IntercityRides";
@@ -115,4 +116,14 @@ function AnimatedRoutes() {
   );
 }
 
-export default AnimatedRoutes;
+
+function App() {
+  return (
+    <BrowserRouter>
+      <ScrollToTop />
+      <AnimatedRoutes />
+    </BrowserRouter>
+  );
+}
+
+export default App;
