@@ -10,12 +10,11 @@ const Footer = () => {
             <div className="md:text-start">
               <a href="/" className="md:block flex justify-center ">
                 <img
-                  src="assets/images/fg-images/web-logo.png"
+                  src="/assets/images/fg-images/web-logo.png"
                   className="h-8"
                   alt="Logo"
                 />
               </a>
-              {/* Make email and phone clickable */}
               <a
                 href="mailto:contact@rideclassy.com"
                 className="mt-2 text-base text-[#EFA765] block hover:underline"
@@ -65,11 +64,15 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div>
-              <img
-                src="assets/images/fg-images/payment-gateway.png"
-                alt="Payment options"
-              />
+            <div className="flex justify-center md:justify-start">
+              {/* Image clickable */}
+              <NavLink to="/payment">
+                <img
+                  src="/assets/images/fg-images/payment-gateway.png"
+                  alt="Payment options"
+                  className="cursor-pointer"
+                />
+              </NavLink>
             </div>
           </div>
         </div>

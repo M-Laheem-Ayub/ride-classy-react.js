@@ -13,6 +13,7 @@ import PrivacyPolicy from "./pages/privacy-policy/PrivacyPolicy";
 import PageWrapper from "./components/PageWrapper";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
+import Payment from "./pages/Payment";
 
 const MainLayout = ({ children }) => (
   <>
@@ -109,13 +110,20 @@ function AnimatedRoutes() {
           }
         />
 
+        {/* ✅ New Payment Page Route */}
+        <Route
+          path="/payment"
+          element={
+              <Payment />
+          }
+        />
+     
         {/* Admin route without header/footer */}
         <Route path="/admin/*" element={<Admin />} />
       </Routes>
     </AnimatePresence>
   );
 }
-
 
 function App() {
   return (
