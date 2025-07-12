@@ -28,7 +28,7 @@ const TestControls = () => {
       {/* Toggle Button */}
       <button
         onClick={() => setShowControls(!showControls)}
-        className="bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition-colors"
+        className="bg-blue-600  text-white py-3 px-4 rounded-full shadow-lg hover:bg-blue-700 transition-colors"
         title="Test Controls"
       >
         <FontAwesomeIcon icon={faPlus} className="text-lg" />
